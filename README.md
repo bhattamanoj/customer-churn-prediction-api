@@ -31,6 +31,7 @@ The project includes:
 - `requirements.txt` – project dependencies
 - `Dockerfile` – container setup
 - `.dockerignore` – Docker ignore rules
+- `churn_model.joblib` – saved trained model
 
 ## How to Run
 
@@ -46,6 +47,10 @@ Run the API:
 
 `python app.py`
 
+Then open:
+
+`http://127.0.0.1:5000/`
+
 ## Docker Setup
 
 Build the Docker image:
@@ -59,6 +64,22 @@ Run the container:
 Then open:
 
 `http://127.0.0.1:5000/`
+
+## Results
+The API project was completed successfully.
+
+- The classification model was trained and saved as `churn_model.joblib`
+- The Flask API ran successfully on port 5000
+- The `/` route returned the required features in JSON format
+- The `/predict` route returned a prediction and probability score
+
+## Project Evidence
+
+### API Home Response
+![API Home](api_home.png)
+
+### Prediction Response
+![Prediction Response](prediction_response.png)
 
 ## Key Results
 This project shows how to move from model training to a simple API workflow. It gives a clear example of how machine learning can be connected to deployment and reproducibility.
